@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="160dp"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginLeft="10dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383"
+        app:srcCompat="@drawable/op_grey" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.442"
+        app:srcCompat="@drawable/opaque" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="John Cooper"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/image2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="117dp"
+            android:fontFamily="sans-serif-light"
+            android:text="UX Designer @ Google"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.095"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.241" />
+
+        <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Available"
+        android:textColor="#85BD44"
+        android:textSize="10sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="130dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.463" />
+
+        <ImageView
+            android:id="@+id/greyheart"
+            android:layout_width="22dp"
+            android:layout_height="16dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="105dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.884"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.076"
+            app:srcCompat="@drawable/grey_heart" />
+
+        <TextView
+        android:id="@+id/charges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="$1500/Session"
+        android:textColor="#FFC107"
+        android:textSize="8dp"
+        android:textStyle="bold"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.435" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
+
