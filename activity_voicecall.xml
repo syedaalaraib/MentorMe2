@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D7ECEC"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Placeholder for remote user's profile image or video view (if applicable) -->
+        <ImageView
+            android:id="@+id/remote_user_profile_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/custom_shapes" />
+
+        <!-- Button to mute/unmute microphone -->
+        <Button
+            android:id="@+id/mute_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/remote_user_profile_image"
+            android:layout_alignStart="@id/remote_user_profile_image"
+            android:layout_marginTop="20dp"
+            android:text="Mute"
+            android:onClick="toggleMute" />
+
+        <!-- Button to end the call -->
+        <Button
+            android:id="@+id/leavecall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/remote_user_profile_image"
+            android:layout_alignEnd="@id/remote_user_profile_image"
+            android:layout_marginTop="20dp"
+            android:text="End Call"
+            android:onClick="endCall" />
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="#D7ECEC"-->
+<!--    tools:context=".voicecall">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView5"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:fontFamily="sans-serif-black"-->
+<!--        android:text="10:30 PM"-->
+<!--        android:textSize="18sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView66"-->
+<!--        android:layout_width="43dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.494"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.985"-->
+<!--        app:srcCompat="@drawable/custom_shapes" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView4"-->
+<!--        android:layout_width="37dp"-->
+<!--        android:layout_height="28dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.957"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.017"-->
+<!--        app:srcCompat="@drawable/a6ab5d0a985be616e42b4b4d7bfe7b8a" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView5"-->
+<!--        android:layout_width="28dp"-->
+<!--        android:layout_height="19dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.861"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.021"-->
+<!--        app:srcCompat="@drawable/_signal" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView6"-->
+<!--        android:layout_width="21dp"-->
+<!--        android:layout_height="15dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.792"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.027"-->
+<!--        app:srcCompat="@drawable/signal" />-->
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView64"-->
+<!--        android:layout_width="448dp"-->
+<!--        android:layout_height="583dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.513"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.0"-->
+<!--        app:srcCompat="@drawable/op_grey" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView63"-->
+<!--        android:layout_width="27dp"-->
+<!--        android:layout_height="27dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.977"-->
+<!--        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/textVieew40"-->
+<!--        android:layout_width="139dp"-->
+<!--        android:layout_height="31dp"-->
+<!--        android:fontFamily="sans-serif-black"-->
+<!--        android:text="John Cooper-->
+<!--"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.534"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.121" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView40"-->
+<!--        android:layout_width="49dp"-->
+<!--        android:layout_height="25dp"-->
+<!--        android:fontFamily="sans-serif-black"-->
+<!--        android:text="50:08"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.168" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imagieVaiew66"-->
+<!--        android:layout_width="43dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.184"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.888"-->
+<!--        app:srcCompat="@drawable/custom_shapes" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imapgeVaiew66"-->
+<!--        android:layout_width="43dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.494"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.888"-->
+<!--        app:srcCompat="@drawable/custom_shapes" />-->
+
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageVaiewk66"-->
+<!--        android:layout_width="43dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.779"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.888"-->
+<!--        app:srcCompat="@drawable/custom_shapes" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView47"-->
+<!--        android:layout_width="144dp"-->
+<!--        android:layout_height="9dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.531"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.825"-->
+<!--        app:srcCompat="@drawable/op_grey" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imagweView47"-->
+<!--        android:layout_width="144dp"-->
+<!--        android:layout_height="9dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.531"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.825"-->
+<!--        app:srcCompat="@drawable/op_grey" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView70"-->
+<!--        android:layout_width="103dp"-->
+<!--        android:layout_height="91dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.225"-->
+<!--        app:srcCompat="@mipmap/man_foreground" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView85"-->
+<!--        android:layout_width="38dp"-->
+<!--        android:layout_height="35dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.182"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.882"-->
+<!--        app:srcCompat="@android:drawable/ic_btn_speak_now" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView88"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.493"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.878"-->
+<!--        app:srcCompat="@android:drawable/ic_lock_silent_mode_off" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView89"-->
+<!--        android:layout_width="44dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.782"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.878"-->
+<!--        app:srcCompat="@android:drawable/ic_media_pause" />-->
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
